@@ -1,6 +1,7 @@
 langgraph
 langchain
-langchain-google-genai
+langchain-openai
+openai>=1.0.0
 fastapi
 uvicorn
 gradio

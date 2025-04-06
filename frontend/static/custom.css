@@ -1,0 +1,226 @@
+/**
+ * Custom styles for the AI Travel Assistant
+ * Professional travel-themed design for investor demo
+ */
+
+:root {
+    --primary-color: #4a90e2;       /* Sky blue */
+    --secondary-color: #34c759;     /* Green for success/confirmation */
+    --accent-color: #ff9500;        /* Orange for highlights */
+    --background-light: #f8f9fa;    /* Light background */
+    --text-dark: #343a40;           /* Dark text */
+    --text-light: #f8f9fa;          /* Light text */
+    --user-msg-bg: #e1f5fe;         /* Light blue for user messages */
+    --assistant-msg-bg: #ffffff;    /* White for assistant messages */
+    --border-radius: 12px;          /* Rounded corners */
+    --shadow: 0 2px 8px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+/* Global styling */
+body {
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif !important;
+    color: var(--text-dark) !important;
+    background-color: var(--background-light) !important;
+}
+
+/* Main container styling */
+.gradio-container {
+    max-width: 1200px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    box-shadow: var(--shadow) !important;
+    border-radius: var(--border-radius) !important;
+    background-color: white !important;
+}
+
+/* Header styling */
+.gr-header {
+    background: linear-gradient(135deg, var(--primary-color), #2d7dd2) !important;
+    color: var(--text-light) !important;
+    padding: 20px !important;
+    border-radius: var(--border-radius) var(--border-radius) 0 0 !important;
+}
+
+.gr-header h1 {
+    font-size: 2.5rem !important;
+    font-weight: 600 !important;
+    margin-bottom: 10px !important;
+}
+
+.gr-header p {
+    font-size: 1.1rem !important;
+    opacity: 0.9 !important;
+}
+
+/* Fix for autofocus issues */
+[autofocus]:not(:focus) {
+    outline: none !important;
+}
+
+/* Chat container */
+.chatbot-container {
+    background-image: url('https://img.freepik.com/free-vector/world-map-with-global-technology-social-connection-network-with-nodes-links-vector-illustration_1284-1968.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-blend-mode: overlay !important;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    border-radius: var(--border-radius) !important;
+    padding: 20px !important;
+    margin-bottom: 20px !important;
+}
+
+/* Improve chat interface */
+.chat-message {
+    padding: 16px !important;
+    border-radius: var(--border-radius) !important;
+    margin-bottom: 16px !important;
+    max-width: 80% !important;
+    box-shadow: var(--shadow) !important;
+    line-height: 1.5 !important;
+    transition: all 0.2s ease !important;
+}
+
+.user-message {
+    background-color: var(--user-msg-bg) !important;
+    align-self: flex-end !important;
+    margin-left: auto !important;
+    border-bottom-right-radius: 4px !important;
+    border-left: 4px solid var(--primary-color) !important;
+}
+
+.assistant-message {
+    background-color: var(--assistant-msg-bg) !important;
+    align-self: flex-start !important;
+    margin-right: auto !important;
+    border-bottom-left-radius: 4px !important;
+    border-right: 4px solid var(--accent-color) !important;
+}
+
+/* Improve input field */
+.input-container {
+    margin-top: 20px !important;
+    border-radius: var(--border-radius) !important;
+    box-shadow: var(--shadow) !important;
+    overflow: hidden !important;
+}
+
+.input-container textarea {
+    border: 2px solid #e9ecef !important;
+    border-radius: var(--border-radius) !important;
+    padding: 12px !important;
+    font-size: 1rem !important;
+    transition: border-color 0.2s ease !important;
+}
+
+.input-container textarea:focus {
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.25) !important;
+}
+
+/* Submit button styling */
+.submit-btn {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    border-radius: var(--border-radius) !important;
+    padding: 10px 20px !important;
+    font-weight: 600 !important;
+    transition: all 0.2s ease !important;
+}
+
+.submit-btn:hover {
+    background-color: #3a7bc8 !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Examples section */
+.examples-container {
+    background-color: rgba(74, 144, 226, 0.05) !important;
+    border-radius: var(--border-radius) !important;
+    padding: 15px !important;
+    margin-top: 20px !important;
+    border: 1px solid rgba(74, 144, 226, 0.2) !important;
+}
+
+.examples-container button {
+    background-color: white !important;
+    border: 1px solid #e9ecef !important;
+    border-radius: var(--border-radius) !important;
+    margin: 5px !important;
+    padding: 8px 16px !important;
+    transition: all 0.2s ease !important;
+}
+
+.examples-container button:hover {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Loading indicator improvements */
+.progress-bar {
+    height: 4px !important;
+    background-color: var(--primary-color) !important;
+    border-radius: 2px !important;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    .chat-message {
+        max-width: 90% !important;
+        padding: 12px !important;
+    }
+    
+    .gr-header h1 {
+        font-size: 1.8rem !important;
+    }
+    
+    .gr-header p {
+        font-size: 1rem !important;
+    }
+}
+
+/* Error message styling */
+.error-message {
+    color: #721c24 !important;
+    background-color: #f8d7da !important;
+    border: 1px solid #f5c6cb !important;
+    padding: 12px !important;
+    border-radius: var(--border-radius) !important;
+    margin-bottom: 15px !important;
+    display: none !important;
+}
+
+.error-message.visible {
+    display: block !important;
+    animation: fadeIn 0.3s ease-in-out !important;
+}
+
+/* Travel-themed icons and elements */
+.travel-icon {
+    width: 24px !important;
+    height: 24px !important;
+    margin-right: 8px !important;
+    vertical-align: middle !important;
+}
+
+/* Footer styling */
+.footer {
+    text-align: center !important;
+    padding: 20px !important;
+    color: #6c757d !important;
+    font-size: 0.9rem !important;
+    border-top: 1px solid #e9ecef !important;
+    margin-top: 30px !important;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in-out !important;
+}

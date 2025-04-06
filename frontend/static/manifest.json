@@ -1,0 +1,16 @@
+{
+  "name": "AI Travel Assistant",
+  "short_name": "Travel AI",
+  "description": "An AI-powered travel assistant for planning trips, finding flights and hotels, and getting travel information.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#4a90e2",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    }
+  ]
+}
